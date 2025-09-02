@@ -1,0 +1,381 @@
+.App {
+  text-align: center;
+}
+.header{
+  background-color: #333;
+  text-align: center;
+  color:pink;
+}
+.App {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.showcase {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  max-width: 500px;
+}
+
+.overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.more-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.menu {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-item {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-item.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.App img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hex-img {
+  max-width: 300px;  /* adjust size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; /* optional: rounded look */
+}
+
+.App:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: serif;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Footer {
+  background-color:pink;
+  color:chocolate;
+}
+table tr td
+{
+  border: 1px solid #000000;
+  padding: 5px;
+}
+
+.student {
+  background-color:bisque;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.more-btn {
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #b08d57; /* golden-brown shade */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.more-btn .arrow {
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.more-btn:hover {
+  color: #806040; /* darker gold/brown on hover */
+}
+
+/* Center the card and give background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, white);
+}
+
+/* Card styling */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Form heading */
+.card h3 {
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Form controls */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: white;
+  box-shadow: 0 0 5px white(255, 159, 67, 0.5);
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: white;
+}
+
+/* Toggle link styling */
+.btn-link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Text center below form */
+.text-center {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card {
+    padding: 25px 15px;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+/* Page container for login/signup */
+.auth-page {
+  background: linear-gradient(135deg, white); /* gradient background */
+  min-height: 100vh; /* full viewport height */
+}
+
+/* Card styling */
+.auth-card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Form heading */
+.auth-card h3 {
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs styling */
+.auth-card .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+}
+
+.auth-card .form-control:focus {
+  border-color: white;
+  box-shadow: 0 0 5px white(255, 159, 67, 0.5);
+}
+
+/* Button styling */
+.auth-card .btn-primary {
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0); /* fully transparent */
+  backdrop-filter: blur(0px); /* optional blur if you want */
+  box-shadow: none; /* remove shadow */
+}
+
+.auth-card .btn-primary:hover {
+  background-color: white;
+}
+
+/* Toggle links */
+.auth-card .btn-link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-card .btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Text center below form */
+.auth-card .text-center {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 25px 15px;
+  }
+
+  .auth-card .form-control {
+    font-size: 0.9rem;
+  }
+
+  .auth-card .btn-primary {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+
+.hotel-bg {
+    background-image: url('./hotelroom.avif');
+    height: 100vh; /* full viewport height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotel-bg .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
